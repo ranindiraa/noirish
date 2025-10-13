@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NOIRISH | Delivery Information</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .delivery-card {
+        background: #fff;
+        border: 1px solid #edf0f5;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.1);
+      }
+
+      .delivery-card h3 {
+        color: #25262a;
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .info-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #f3f3f4;
+      }
+
+      .info-row:last-child {
+        border-bottom: none;
+      }
+
+      .info-label {
+        font-weight: 500;
+        color: #25262a;
+      }
+
+      .info-value {
+        color: #5c626e;
+        text-align: right;
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .status-badge.processing {
+        background-color: #fff3cd;
+        color: #856404;
+      }
+
+      .status-badge.shipped {
+        background-color: #d1ecf1;
+        color: #0c5460;
+      }
+
+      .status-badge.delivered {
+        background-color: #d4edda;
+        color: #155724;
+      }
+
+      .tracking-timeline {
+        position: relative;
+        padding-left: 30px;
+      }
+
+      .tracking-item {
+        position: relative;
+        padding-bottom: 30px;
+      }
+
+      .tracking-item:last-child {
+        padding-bottom: 0;
+      }
+
+      .tracking-item::before {
+        content: "";
+        position: absolute;
+        left: -22px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #edf0f5;
+      }
+
+      .tracking-item:last-child::before {
+        display: none;
+      }
+
+      .tracking-dot {
+        position: absolute;
+        left: -30px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #7971ea;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 2px #7971ea;
+      }
+
+      .tracking-dot.inactive {
+        background: #edf0f5;
+        box-shadow: 0 0 0 2px #edf0f5;
+      }
+
+      .tracking-content h5 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #25262a;
+        margin-bottom: 5px;
+      }
+
+      .tracking-content p {
+        font-size: 14px;
+        color: #8c92a0;
+        margin-bottom: 0;
+      }
+
+      .cost-box {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        border: 1px solid #edf0f5;
+      }
+
+      .cost-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        font-size: 16px;
+        color: #5c626e;
+      }
+
+      .cost-row.total {
+        font-weight: 700;
+        font-size: 20px;
+        color: #25262a;
+        padding-top: 15px;
+        border-top: 2px solid #edf0f5;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+
+      .product-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #f3f3f4;
+      }
+
+      .product-item:last-child {
+        border-bottom: none;
+      }
+
+      .product-details {
+        flex-grow: 1;
+      }
+
+      .product-details strong {
+        color: #25262a;
+        font-size: 16px;
+      }
+
+      .product-details small {
+        color: #8c92a0;
+      }
+
+      .product-price {
+        color: #25262a;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <!-- HEADER -->
+      <header class="site-navbar" role="banner">
+        <div class="site-navbar-top">
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left"
+              >
+                <form action="" class="site-block-top-search">
+                  <span class="icon icon-search2"></span>
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Search"
+                  />
+                </form>
+              </div>
+
+              <div
+                class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center"
+              >
+                <div class="site-logo">
+                  <a href="index.html" class="js-logo-clone">NOIRISH</a>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                <div class="site-top-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><span class="icon icon-person"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon icon-heart-o"></span></a>
+                    </li>
+                    <li>
+                      <a href="cart.html" class="site-cart">
+                        <span class="icon icon-shopping_cart"></span>
+                      </a>
+                    </li>
+                    <li class="d-inline-block d-md-none ml-md-0">
+                      <a href="#" class="site-menu-toggle js-menu-toggle">
+                        <span class="icon-menu"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav
+          class="site-navigation text-right text-md-center"
+          role="navigation"
+        >
+          <div class="container">
+            <ul class="site-menu js-clone-nav d-none d-md-block">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- BREADCRUMB -->
+      <div class="bg-light py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-0">
+              <a href="index.html">Home</a> <span class="mx-2 mb-0">/</span>
+              <a href="checkout.html">Checkout</a>
+              <span class="mx-2 mb-0">/</span>
+              <strong class="text-black">Delivery Information</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-7">
+              <!-- Order Status -->
+              <div class="delivery-card">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <h3 class="mb-0">Order Status</h3>
+                  <span class="status-badge processing">Processing</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Order Number</span>
+                  <span class="info-value">#ORD-2025-0001234</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Order Date</span>
+                  <span class="info-value">October 13, 2025</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Estimated Delivery</span>
+                  <span class="info-value">October 18-20, 2025</span>
+                </div>
+              </div>
+
+              <!-- Shipping Address -->
+              <div class="delivery-card">
+                <h3>Shipping Address</h3>
+                <div class="info-row">
+                  <span class="info-label">Recipient Name</span>
+                  <span class="info-value">John Doe</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Phone Number</span>
+                  <span class="info-value">+62 812-3456-7890</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Email</span>
+                  <span class="info-value">john.doe@email.com</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Full Address</span>
+                  <span class="info-value"
+                    >Jl. Sudirman No. 123<br />Jakarta Pusat, DKI Jakarta<br />10220</span
+                  >
+                </div>
+              </div>
+
+              <!-- Tracking Timeline -->
+              <div class="delivery-card">
+                <h3>Delivery Tracking</h3>
+                <div class="tracking-timeline">
+                  <div class="tracking-item">
+                    <div class="tracking-dot"></div>
+                    <div class="tracking-content">
+                      <h5>Order Placed</h5>
+                      <p>October 13, 2025 - 14:30</p>
+                    </div>
+                  </div>
+                  <div class="tracking-item">
+                    <div class="tracking-dot"></div>
+                    <div class="tracking-content">
+                      <h5>Payment Confirmed</h5>
+                      <p>October 13, 2025 - 14:35</p>
+                    </div>
+                  </div>
+                  <div class="tracking-item">
+                    <div class="tracking-dot inactive"></div>
+                    <div class="tracking-content">
+                      <h5>Processing</h5>
+                      <p>Preparing your order</p>
+                    </div>
+                  </div>
+                  <div class="tracking-item">
+                    <div class="tracking-dot inactive"></div>
+                    <div class="tracking-content">
+                      <h5>Shipped</h5>
+                      <p>On the way to you</p>
+                    </div>
+                  </div>
+                  <div class="tracking-item">
+                    <div class="tracking-dot inactive"></div>
+                    <div class="tracking-content">
+                      <h5>Delivered</h5>
+                      <p>Package received</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column - Order Summary -->
+            <div class="col-md-5">
+              <div class="delivery-card" style="top: auto">
+                <h3>Order Summary</h3>
+
+                <!-- Product Details -->
+                <div class="mb-4">
+                  <h5 class="mb-3 font-weight-bold" style="font-size: 18px">
+                    Product Details
+                  </h5>
+                  <div class="product-item">
+                    <div class="product-details">
+                      <strong>Tank Top</strong><br />
+                      <small>Size: L | Color: Black | Qty: 1</small>
+                    </div>
+                    <div class="product-price">Rp750.000</div>
+                  </div>
+                </div>
+
+                <!-- Shipping Method -->
+                <div class="mb-4">
+                  <h5 class="mb-3 font-weight-bold" style="font-size: 18px">
+                    Shipping Method
+                  </h5>
+                  <div class="product-item">
+                    <div class="product-details">
+                      <strong>Standard Delivery</strong><br />
+                      <small>Delivered within 3-5 working days</small>
+                    </div>
+                    <div class="product-price">Rp15.000</div>
+                  </div>
+                </div>
+
+                <!-- Cost Summary -->
+                <div class="cost-box">
+                  <div class="cost-row">
+                    <span>Product Subtotal</span>
+                    <span>Rp750.000</span>
+                  </div>
+                  <div class="cost-row">
+                    <span>Shipping Cost</span>
+                    <span>Rp15.000</span>
+                  </div>
+                  <div class="cost-row">
+                    <span>Tax (VAT 0%)</span>
+                    <span>Rp0</span>
+                  </div>
+                  <div class="cost-row total">
+                    <span>Total Amount</span>
+                    <span>Rp765.000</span>
+                  </div>
+                </div>
+
+                <div class="alert alert-info mt-4 mb-0">
+                  <small>
+                    <strong>Note:</strong> Estimated delivery time is 3-5
+                    working days after order is processed.
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="site-footer border-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <h3 class="footer-heading mb-4">NOIRISH</h3>
+              <div class="block-6">
+                <h3 class="font-weight-light mb-0">
+                  Style Your Life, Express Yourself
+                </h3>
+                <p>
+                  Premium streetwear for the modern generation. Quality clothing
+                  that speaks your style.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <h3 class="footer-heading mb-4">Quick Links</h3>
+              <ul class="list-unstyled">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="block-5 mb-5">
+                <h3 class="footer-heading mb-4">Contact Info</h3>
+                <ul class="list-unstyled">
+                  <li class="address">
+                    123 Fashion Street, Downtown District, Jakarta 12345
+                  </li>
+                  <li class="phone">
+                    <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                  </li>
+                  <li class="email">contact@noirish.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                NOIRISH. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

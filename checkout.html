@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <header class="site-navbar" role="banner">
+        <div class="site-navbar-top">
+          <div class="container">
+            <div class="row align-items-center">
+              <div
+                class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left"
+              >
+                <form action="" class="site-block-top-search">
+                  <span class="icon icon-search2"></span>
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Search"
+                  />
+                </form>
+              </div>
+
+              <div
+                class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center"
+              >
+                <div class="site-logo">
+                  <a href="index.html" class="js-logo-clone">NOIRISH</a>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                <div class="site-top-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><span class="icon icon-person"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="icon icon-heart-o"></span></a>
+                    </li>
+                    <li>
+                      <a href="cart.html" class="site-cart">
+                        <span class="icon icon-shopping_cart"></span>
+                      </a>
+                    </li>
+                    <li class="d-inline-block d-md-none ml-md-0">
+                      <a href="#" class="site-menu-toggle js-menu-toggle">
+                        <span class="icon-menu"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav
+          class="site-navigation text-right text-md-center"
+          role="navigation"
+        >
+          <div class="container">
+            <ul class="site-menu js-clone-nav d-none d-md-block">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="bg-light py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-0">
+              <a href="index.html">Home</a> <span class="mx-2 mb-0">/</span>
+              <a href="cart.html">Cart</a> <span class="mx-2 mb-0">/</span>
+              <strong class="text-black">Checkout</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <div class="border p-4 rounded" role="alert">
+                Returning customer? <a href="#">Click here</a> to login
+              </div>
+            </div>
+          </div>
+
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-md-0">
+                <h2 class="h3 mb-3 text-black">Shipping Details</h2>
+                <div class="p-3 p-lg-5 border">
+                  <div class="form-group row">
+                    <div class="col-md-6">
+                      <label for="c_fname" class="text-black"
+                        >First Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_fname"
+                        name="c_fname"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="c_lname" class="text-black"
+                        >Last Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_lname"
+                        name="c_lname"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <label for="c_address" class="text-black"
+                        >Address <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_address"
+                        name="c_address"
+                        placeholder="Street address"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Apartment, suite, unit etc. (optional)"
+                    />
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-md-6">
+                      <label for="c_state_country" class="text-black"
+                        >Province, City
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_state_country"
+                        name="c_state_country"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="c_postal_zip" class="text-black"
+                        >Postal/Zip Code
+                        <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_postal_zip"
+                        name="c_postal_zip"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row mb-5">
+                    <div class="col-md-6">
+                      <label for="c_email_address" class="text-black"
+                        >Email Address <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_email_address"
+                        name="c_email_address"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="c_phone" class="text-black"
+                        >Phone Number<span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="c_phone"
+                        name="c_phone"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      for="c_create_account"
+                      class="text-black"
+                      data-toggle="collapse"
+                      href="#create_an_account"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="create_an_account"
+                      ><input type="checkbox" value="1" id="c_create_account" />
+                      Create an account?</label
+                    >
+                    <div class="collapse" id="create_an_account">
+                      <div class="form-group">
+                        <label for="c_account_password" class="text-black"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="c_account_password"
+                          name="c_account_password"
+                          placeholder="Enter password"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="c_account_password2" class="text-black"
+                          >Confirm Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="c_account_password2"
+                          name="c_account_password2"
+                          placeholder="Confirm password"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="c_order_notes" class="text-black"
+                      >Order Notes</label
+                    >
+                    <textarea
+                      name="c_order_notes"
+                      id="c_order_notes"
+                      cols="30"
+                      rows="5"
+                      class="form-control"
+                      placeholder="Write your notes here..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <h2 class="h3 mb-3 mt-5 text-black">Coupon Code</h2>
+                <div class="p-3 p-lg-5 border">
+                  <label for="c_code" class="text-black mb-3"
+                    >Enter your coupon code if you have one</label
+                  >
+                  <div class="input-group w-75">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_code"
+                      placeholder="Coupon Code"
+                      aria-label="Coupon Code"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-primary btn-sm"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                <div class="p-3 p-lg-5 border">
+                  <table class="table site-block-order-table mb-4">
+                    <thead>
+                      <th>Product</th>
+                      <th>Total</th>
+                    </thead>
+                    <tbody id="orderItems">
+                      <tr data-price="750000">
+                        <td>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>Tank Top</span>
+                            <div class="input-group" style="max-width: 120px">
+                              <div class="input-group-prepend">
+                                <button
+                                  class="btn btn-outline-primary js-btn-minus"
+                                  type="button"
+                                >
+                                  −
+                                </button>
+                              </div>
+                              <input
+                                type="text"
+                                class="form-control text-center"
+                                value="1"
+                                placeholder=""
+                                aria-label="Quantity"
+                              />
+                              <div class="input-group-append">
+                                <button
+                                  class="btn btn-outline-primary js-btn-plus"
+                                  type="button"
+                                >
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="item-total">Rp750.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table class="table mb-5">
+                    <tr>
+                      <td class="text-black font-weight-bold">
+                        <strong>Subtotal</strong>
+                      </td>
+                      <td class="text-black font-weight-bold" id="subtotal">
+                        <strong>Rp750.000</strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-black font-weight-bold">
+                        <strong>Shipping</strong>
+                      </td>
+                      <td class="text-black font-weight-bold" id="shippingCost">
+                        <strong>Rp0</strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-black font-weight-bold">
+                        <strong>Order Total</strong>
+                      </td>
+                      <td class="text-black font-weight-bold" id="orderTotal">
+                        <strong>Rp750.000</strong>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <h3 class="h6 mb-3 text-black font-weight-bold">
+                    Shipping Method
+                  </h3>
+                  <div class="shipping-options mb-4">
+                    <div
+                      class="border p-3 rounded option-card mb-2"
+                      onclick="selectShipping(this, 15000)"
+                    >
+                      <input
+                        type="radio"
+                        name="shipping"
+                        value="standard"
+                        class="mr-2"
+                        hidden
+                      />
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>Standard Delivery (3–5 days)</span>
+                        <small class="text-muted">Rp15.000</small>
+                      </div>
+                      <p class="mb-0 text-muted small">
+                        Delivered within 3–5 working days.
+                      </p>
+                    </div>
+
+                    <div
+                      class="border p-3 rounded option-card mb-2"
+                      onclick="selectShipping(this, 25000)"
+                    >
+                      <input
+                        type="radio"
+                        name="shipping"
+                        value="express"
+                        hidden
+                      />
+
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>Express Delivery (1–2 days)</span>
+                        <small class="text-muted">Rp25.000</small>
+                      </div>
+                      <p class="mb-0 text-muted small">
+                        Faster delivery via express courier.
+                      </p>
+                    </div>
+
+                    <div
+                      class="border p-3 rounded option-card mb-2"
+                      onclick="selectShipping(this, 0)"
+                    >
+                      <input
+                        type="radio"
+                        name="shipping"
+                        value="pickup"
+                        hidden
+                      />
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>Self Pickup</span>
+                        <small class="text-muted">Free</small>
+                      </div>
+                      <p class="mb-0 text-muted small">
+                        Pick up at our nearest store.
+                      </p>
+                    </div>
+                  </div>
+
+                  <h3 class="h6 mb-3 text-black font-weight-bold">
+                    Payment Method
+                  </h3>
+
+                  <div
+                    class="border p-3 mb-2 payment-card"
+                    onclick="togglePayment('collapsebank', this)"
+                  >
+                    <h3 class="h6 mb-0">
+                      <a
+                        class="d-block text-dark text-decoration-none"
+                        data-toggle="collapse"
+                        href="#collapsebank"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsebank"
+                      >
+                        Direct Bank Transfer
+                      </a>
+                    </h3>
+                    <div class="collapse" id="collapsebank">
+                      <div class="py-2">
+                        <p class="mb-0">
+                          Make your payment directly into our bank account.
+                          Please use your Order ID as the payment reference.
+                          Your order won’t be shipped until the funds have
+                          cleared in our account.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border p-3 mb-2 payment-card"
+                    onclick="togglePayment('collapsee-wallet', this)"
+                  >
+                    <h3 class="h6 mb-0">
+                      <a
+                        class="d-block text-dark text-decoration-none"
+                        data-toggle="collapse"
+                        href="#collapsee-wallet"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsee-wallet"
+                      >
+                        E-Wallet
+                      </a>
+                    </h3>
+                    <div class="collapse" id="collapsee-wallet">
+                      <div class="py-2">
+                        <p class="mb-0">
+                          Pay easily using popular e-wallets such as GoPay, OVO,
+                          or DANA.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="border p-3 mb-3 payment-card"
+                    onclick="togglePayment('collapsecod', this)"
+                  >
+                    <h3 class="h6 mb-0">
+                      <a
+                        class="d-block text-dark text-decoration-none"
+                        data-toggle="collapse"
+                        href="#collapsecod"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsecod"
+                      >
+                        Cash On Delivery (COD)
+                      </a>
+                    </h3>
+                    <div class="collapse" id="collapsecod">
+                      <div class="py-2">
+                        <p class="mb-0">
+                          Pay when your order arrives at your doorstep.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button
+                      class="btn btn-primary btn-lg py-3 btn-block"
+                      onclick="showCheckoutModal()"
+                    >
+                      Checkout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="checkoutModal"
+            tabindex="-1"
+            role="dialog"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Order Confirmation</h5>
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center py-4">
+                  <div class="mb-3">
+                    <svg
+                      width="64"
+                      height="64"
+                      fill="currentColor"
+                      class="text-success"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>Order Placed Successfully!</h4>
+                  <p class="text-muted">
+                    Thank you for your purchase. Your order has been confirmed.
+                  </p>
+                  <p class="font-weight-bold" id="modalTotal">
+                    Total: Rp750.000
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="window.location='thankyou.html'"
+                  >
+                    View Order
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h3 class="footer-heading mb-4">NOIRISH</h3>
+            <div class="block-6">
+              <h3 class="font-weight-light mb-0">
+                Style Your Life, Express Yourself
+              </h3>
+              <p>
+                Premium streetwear for the modern generation. Quality clothing
+                that speaks your style.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h3 class="footer-heading mb-4">Quick Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">
+                  123 Fashion Street, Downtown District, Jakarta 12345
+                </li>
+                <li class="phone">
+                  <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                </li>
+                <li class="email">contact@noirish.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              NOIRISH. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      // ============================================
+      // CHECKOUT PAGE IMPROVEMENTS
+      // ============================================
+
+      // Global variables
+      let currentShippingCost = 0;
+
+      // Format rupiah helper
+      function formatRupiah(number) {
+        return "Rp" + number.toLocaleString("id-ID");
+      }
+
+      // Change quantity function
+      function changeQty(button, change) {
+        const inputGroup = button.closest(".input-group");
+        const input = inputGroup.querySelector(".form-control.text-center");
+        let currentValue = parseInt(input.value) || 1;
+        let newValue = currentValue + change;
+
+        // Minimum 1
+        if (newValue < 1) newValue = 1;
+
+        input.value = newValue;
+        updateTotal();
+      }
+
+      // Update total when quantity changes
+      function updateTotal() {
+        let subtotal = 0;
+
+        // Calculate subtotal from all items
+        const rows = document.querySelectorAll("#orderItems tr");
+        rows.forEach((row) => {
+          const pricePerItem = parseInt(row.getAttribute("data-price"));
+          const input = row.querySelector(".form-control.text-center");
+          const quantity = parseInt(input.value) || 1;
+          const itemTotal = pricePerItem * quantity;
+
+          // Update item total display
+          const itemTotalCell = row.querySelector(".item-total");
+          itemTotalCell.textContent = formatRupiah(itemTotal);
+
+          subtotal += itemTotal;
+        });
+
+        // Update subtotal display
+        document.getElementById("subtotal").innerHTML =
+          "<strong>" + formatRupiah(subtotal) + "</strong>";
+
+        // Calculate order total
+        const orderTotal = subtotal + currentShippingCost;
+        document.getElementById("orderTotal").innerHTML =
+          "<strong>" + formatRupiah(orderTotal) + "</strong>";
+        document.getElementById("modalTotal").textContent =
+          "Total: " + formatRupiah(orderTotal);
+      }
+
+      // Select shipping method
+      function selectShipping(card, cost) {
+        // Remove active class from all cards
+        document.querySelectorAll(".option-card").forEach((c) => {
+          c.classList.remove("active");
+        });
+
+        // Add active class to selected card
+        card.classList.add("active");
+
+        // Check the radio button
+        const radio = card.querySelector('input[type="radio"]');
+        radio.checked = true;
+
+        // Update shipping cost
+        currentShippingCost = cost;
+        document.getElementById("shippingCost").innerHTML =
+          "<strong>" + formatRupiah(cost) + "</strong>";
+
+        // Recalculate total
+        updateTotal();
+      }
+
+      // Select payment method
+      function selectPayment(element) {
+        // Jika yang diklik adalah link toggle, jangan handle di sini
+        if (element.tagName === "A") return;
+
+        // Remove active class from all payment cards
+        document.querySelectorAll(".payment-method").forEach((c) => {
+          c.classList.remove("active");
+        });
+
+        // Add active class to selected card
+        element.classList.add("active");
+
+        // Close all collapse first
+        document
+          .querySelectorAll(".payment-method .collapse")
+          .forEach((collapse) => {
+            $(collapse).collapse("hide");
+          });
+
+        // Open the collapse in selected card (if exists)
+        const collapse = element.querySelector(".collapse");
+        if (collapse) {
+          $(collapse).collapse("show");
+        }
+      }
+
+      // Show checkout modal
+      function showCheckoutModal() {
+        $("#checkoutModal").modal("show");
+      }
+
+      // Initialize when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add event listeners to quantity inputs for manual edit
+        const qtyInputs = document.querySelectorAll(
+          "#orderItems .form-control.text-center"
+        );
+        qtyInputs.forEach((input) => {
+          input.addEventListener("input", function () {
+            // Ensure minimum value is 1
+            let val = parseInt(this.value);
+            if (isNaN(val) || val < 1) {
+              this.value = 1;
+            }
+            updateTotal();
+          });
+
+          input.addEventListener("blur", function () {
+            // On blur, ensure value is valid
+            if (this.value === "" || parseInt(this.value) < 1) {
+              this.value = 1;
+              updateTotal();
+            }
+          });
+
+          // Prevent negative numbers and non-numeric
+          input.addEventListener("keypress", function (e) {
+            if (
+              e.key === "-" ||
+              e.key === "e" ||
+              e.key === "." ||
+              e.key === ","
+            ) {
+              e.preventDefault();
+            }
+          });
+        });
+
+        // Add event listeners to plus/minus buttons
+        document.querySelectorAll(".js-btn-minus").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            changeQty(this, -1);
+          });
+        });
+
+        document.querySelectorAll(".js-btn-plus").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            changeQty(this, 1);
+          });
+        });
+
+        // Initialize total calculation
+        updateTotal();
+      });
+    </script>
+  </body>
+</html>

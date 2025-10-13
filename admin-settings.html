@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings &mdash; NOIRISH</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">NOIRISH Admin</div>
+            <div class="list-group list-group-flush">
+                <a href="admin.html" class="list-group-item list-group-item-action bg-dark"><span class="icon-dashboard mr-3"></span> Dashboard</a>
+                <a href="admin-products.html" class="list-group-item list-group-item-action bg-dark"><span class="icon-shopping-bag mr-3"></span> Products</a>
+                <a href="admin-orders.html" class="list-group-item list-group-item-action bg-dark"><span class="icon-list-alt mr-3"></span> Orders</a>
+                <a href="admin-customers.html" class="list-group-item list-group-item-action bg-dark"><span class="icon-group mr-3"></span> Customers</a>
+                <a href="admin-settings.html" class="list-group-item list-group-item-action bg-dark active"><span class="icon-cogs mr-3"></span> Settings</a>
+                <a href="index.html" class="list-group-item list-group-item-action bg-dark"><span class="icon-sign-out mr-3"></span> Logout</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <h4 class="mb-0">Settings</h4>
+                </div>
+            </nav>
+
+            <div class="container-fluid p-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                General Settings
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="siteName">Site Name</label>
+                                        <input type="text" class="form-control" id="siteName" value="NOIRISH">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactEmail">Contact Email</label>
+                                        <input type="email" class="form-control" id="contactEmail" value="contact@noirish.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="storeAddress">Store Address</label>
+                                        <textarea class="form-control" id="storeAddress" rows="3">203 Fake St. Mountain View, San Francisco, California, USA</textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                Payment Gateway
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                   <div class="form-group">
+                                       <label>Stripe API Key</label>
+                                       <input type="text" class="form-control" placeholder="pk_test_************************" disabled>
+                                   </div>
+                                    <div class="form-group">
+                                       <label>Paypal Client ID</label>
+                                       <input type="text" class="form-control" placeholder="AZ****************************************" disabled>
+                                   </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Change Admin Password
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="currentPassword">Current Password</label>
+                                        <input type="password" class="form-control" id="currentPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newPassword">New Password</label>
+                                        <input type="password" class="form-control" id="newPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirm New Password</label>
+                                        <input type="password" class="form-control" id="confirmPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-block">Update Password</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success"><span class="icon-save mr-2"></span> Save All Settings</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
