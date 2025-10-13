@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # NOIRISH Front-End
 
@@ -9,3 +10,7 @@ All credits for the base design go to Colorlib.
 
 Customized by me for university coursework.
 
+=======
+# noirish
+This project uses a template from [ThemeWagon](https://themewagon.github.io/shoppers/) by Colorlib. Additional features, styling, content modified and customized for university project and educational purposes.
+>>>>>>> 6cd4ff7150b828d743ce90fdf03286b1c770270e
