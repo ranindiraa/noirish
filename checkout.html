@@ -381,28 +381,6 @@
                   <div class="shipping-options mb-4">
                     <div
                       class="border p-3 rounded option-card mb-2"
-                      onclick="selectShipping(this, 15000)"
-                    >
-                      <input
-                        type="radio"
-                        name="shipping"
-                        value="standard"
-                        class="mr-2"
-                        hidden
-                      />
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span>Standard Delivery (3–5 days)</span>
-                        <small class="text-muted">Rp15.000</small>
-                      </div>
-                      <p class="mb-0 text-muted small">
-                        Delivered within 3–5 working days.
-                      </p>
-                    </div>
-
-                    <div
-                      class="border p-3 rounded option-card mb-2"
                       onclick="selectShipping(this, 25000)"
                     >
                       <input
@@ -415,11 +393,33 @@
                       <div
                         class="d-flex justify-content-between align-items-center"
                       >
-                        <span>Express Delivery (1–2 days)</span>
+                        <span>Express Delivery</span>
                         <small class="text-muted">Rp25.000</small>
                       </div>
                       <p class="mb-0 text-muted small">
                         Faster delivery via express courier.
+                      </p>
+                    </div>
+
+                    <div
+                      class="border p-3 rounded option-card mb-2"
+                      onclick="selectShipping(this, 15000)"
+                    >
+                      <input
+                        type="radio"
+                        name="shipping"
+                        value="standard"
+                        class="mr-2"
+                        hidden
+                      />
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span>Standard Delivery</span>
+                        <small class="text-muted">Rp15.000</small>
+                      </div>
+                      <p class="mb-0 text-muted small">
+                        Delivered within 3–5 working days.
                       </p>
                     </div>
 
@@ -672,11 +672,6 @@
     <script src="js/main.js"></script>
 
     <script>
-      // ============================================
-      // CHECKOUT PAGE IMPROVEMENTS
-      // ============================================
-
-      // Global variables
       let currentShippingCost = 0;
 
       // Format rupiah helper
@@ -753,31 +748,6 @@
       }
 
       // Select payment method
-      function selectPayment(element) {
-        // Jika yang diklik adalah link toggle, jangan handle di sini
-        if (element.tagName === "A") return;
-
-        // Remove active class from all payment cards
-        document.querySelectorAll(".payment-method").forEach((c) => {
-          c.classList.remove("active");
-        });
-
-        // Add active class to selected card
-        element.classList.add("active");
-
-        // Close all collapse first
-        document
-          .querySelectorAll(".payment-method .collapse")
-          .forEach((collapse) => {
-            $(collapse).collapse("hide");
-          });
-
-        // Open the collapse in selected card (if exists)
-        const collapse = element.querySelector(".collapse");
-        if (collapse) {
-          $(collapse).collapse("show");
-        }
-      }
 
       // Show checkout modal
       function showCheckoutModal() {
@@ -839,6 +809,33 @@
         // Initialize total calculation
         updateTotal();
       });
+
+      function togglePayment(id, element) {
+        // Tutup semua collapse payment lain
+        document.querySelectorAll(".payment-card .collapse").forEach((c) => {
+          if (c.id !== id) {
+            $(c).collapse("hide");
+          }
+        });
+
+        // Hapus class active dari semua payment card
+        document.querySelectorAll(".payment-card").forEach((card) => {
+          card.classList.remove("active");
+        });
+
+        // Toggle yang diklik
+        const collapseElement = document.getElementById(id);
+        const isOpen = collapseElement.classList.contains("show");
+
+        if (isOpen) {
+          // Kalau udah kebuka, tutup
+          $(collapseElement).collapse("hide");
+        } else {
+          // Kalau belum, buka
+          $(collapseElement).collapse("show");
+          element.classList.add("active");
+        }
+      }
     </script>
   </body>
 </html>

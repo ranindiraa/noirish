@@ -827,3 +827,303 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+                 .option-card {
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                      }
+                      .option-card:hover {
+                        background-color: #f9f9f9;
+                      }
+                      .option-card input:checked + div,
+                      .option-card input:checked ~ p {
+                        border-color: #6c63ff !important;
+                      }
+                      .option-card:has(input:checked) {
+                        border: 2px solid #6c63ff;
+                        background-color: #f0edff;
+                      }
+/* Gaya dasar Payment Card — seragam dengan Shipping */
+.payment-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px; /* ⬅️ bikin sudut lebih lembut */
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* ⬅️ shadow lembut */
+  cursor: pointer;
+}
+
+                      
+.payment-card h3 a,
+.payment-method h3 a {
+  color: #7971ea !important; 
+  text-decoration: none !important; 
+  font-weight: 500;
+  outline: none !important;
+}
+
+.payment-card h3 a:hover,
+.payment-card h3 a:focus,
+.payment-card h3 a:active,
+.payment-method h3 a:hover,
+.payment-method h3 a:focus,
+.payment-method h3 a:active {
+  color: #6c63ff !important; 
+  text-decoration: none !important;
+  outline: none !important; 
+}
+
+.payment-card.active {
+  border-color: #7971ea !important;
+  background-color: #fff !important;
+  color: inherit !important;
+  box-shadow: 0 0 8px rgba(121, 113, 234, 0.25); /* shadow ungu lebih lembut */
+}
+
+.payment-card.active {
+  border-color: #7971ea !important;
+  background-color: #fff !important;
+  color: inherit !important;
+  box-shadow: 0 0 6px rgba(121, 113, 234, 0.3);
+}
+
+
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shipping-options .option-card span {
+  color: #7971ea !important; 
+  font-weight: 500;
+}
+
+.shipping-options .option-card small {
+  color: #7971ea !important; 
+}
+
+.shipping-options .option-card.active span,
+.shipping-options .option-card.active small {
+  color: #6c63ff !important; 
+}
+
+      body {
+        font-family: "Mukta", sans-serif !important;
+        color: #8c92a0;
+        font-weight: 300;
+        line-height: 1.7;
+        font-size: 16px;
+      }
+
+      h2.h3,
+      h3,
+      h4,
+      h5 {
+        color: #25262a;
+        font-weight: 500;
+      }
+
+      /* Section titles seperti di checkout */
+      .section-title {
+        font-size: 24px;
+        color: #25262a;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .delivery-card {
+        background: #fff;
+        border: 1px solid #edf0f5;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 40px;
+      }
+
+      .info-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-bottom: 1px solid #f3f3f4;
+      }
+
+      .info-row:last-child {
+        border-bottom: none;
+      }
+
+      .info-label {
+        font-weight: 500;
+        color: #25262a;
+      }
+
+      .info-value {
+        color: #5c626e;
+        text-align: right;
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .status-badge.processing {
+        background-color: #fff3cd;
+        color: #856404;
+      }
+
+      .tracking-timeline {
+        position: relative;
+        padding-left: 30px;
+      }
+
+      .tracking-item {
+        position: relative;
+        padding-bottom: 30px;
+      }
+
+      .tracking-item:last-child {
+        padding-bottom: 0;
+      }
+
+      .tracking-item::before {
+        content: "";
+        position: absolute;
+        left: -22px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #edf0f5;
+      }
+
+      .tracking-dot {
+        position: absolute;
+        left: -30px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #7971ea;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 2px #7971ea;
+      }
+
+      .tracking-dot.inactive {
+        background: #edf0f5;
+        box-shadow: 0 0 0 2px #edf0f5;
+      }
+
+      .tracking-content h5 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #25262a;
+        margin-bottom: 5px;
+      }
+
+      .tracking-content p {
+        font-size: 14px;
+        color: #8c92a0;
+        margin-bottom: 0;
+      }
+
+      .cost-box {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        border: 1px solid #edf0f5;
+      }
+
+      .cost-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        font-size: 16px;
+        color: #5c626e;
+      }
+
+      .cost-row.total {
+        font-weight: 700;
+        font-size: 18px;
+        color: #25262a;
+        padding-top: 15px;
+        border-top: 2px solid #edf0f5;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+
+      .product-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #f3f3f4;
+      }
+
+      .product-item:last-child {
+        border-bottom: none;
+      }
+
+      .product-details strong {
+        color: #25262a;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .product-details small {
+        color: #8c92a0;
+      }
+
+      .product-price {
+        color: #25262a;
+        font-weight: 700;
+      }
+
+      .font-weight-bold {
+        font-weight: 600 !important;
+      }
+  
+      /* =====================================
+   SHIPPING OPTION STYLE (match Payment Card look)
+   ===================================== */
+.shipping-options .option-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Active (selected) state — like payment card */
+.shipping-options .option-card.active {
+  border: 1px solid #7971ea !important;
+  box-shadow: 0 0 8px rgba(121, 113, 234, 0.25);
+  background-color: #fff !important;
+}
+
+/* Text style */
+.shipping-options .option-card span {
+  color: #25262a;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.shipping-options .option-card small {
+  color: #8c92a0;
+  font-size: 14px;
+}
+
+.shipping-options .option-card .price {
+  float: right;
+  color: #25262a;
+  font-weight: 500;
+}
