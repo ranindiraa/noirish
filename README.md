@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # NOIRISH Front-End
 
