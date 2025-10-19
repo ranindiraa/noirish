@@ -54,7 +54,7 @@
         <nav class="site-navigation text-right text-md-center" role="navigation">
           <div class="container">
             <ul class="site-menu js-clone-nav d-none d-md-block">
-              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="catalog.html">Catalog</a></li>
               <li><a href="blog.html">Blog</a></li>
@@ -70,33 +70,46 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <div class="border p-5 rounded shadow-sm">
-                <h3 class="mb-4 text-center">Buat Akun Baru</h3>
+                <h3 class="mb-4 text-center">Create a New Account</h3>
                 <form id="registerForm">
                   <div class="form-group">
-                    <label for="name">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap" required />
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required />
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Masukkan email" required />
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
                   </div>
                   <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Masukkan password" required />
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required />
                   </div>
                   <div class="form-group">
-                    <label for="confirm">Konfirmasi Password</label>
-                    <input type="password" class="form-control" id="confirm" placeholder="Ulangi password" required />
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm" placeholder="Repeat your password" required />
                   </div>
+
                   <div class="form-group text-center mt-4">
-                    <button type="submit" class="btn btn-primary">
-                      Daftar
-                    </button>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
                   </div>
+
+                  <!-- Social Login -->
+                  <div class="text-center mt-4">
+                    <p class="text-muted mb-3">Or sign up with</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-outline-dark btn-sm mx-1">
+                        <span class="icon icon-google mr-1"></span> Google
+                      </a>
+                      <a href="#" class="btn btn-outline-primary btn-sm mx-1">
+                        <span class="icon icon-facebook mr-1"></span> Facebook
+                      </a>
+                    </div>
+                  </div>
+
                   <div class="text-center mt-3">
                     <p class="mt-2">
-                      Sudah punya akun?
-                      <a href="login.html">Login di sini</a>
+                      Already have an account?
+                      <a href="login.html">Login here</a>
                     </p>
                   </div>
                 </form>
@@ -162,7 +175,7 @@
     <script src="js/main.js"></script>
 
     <script>
-      // Inisialisasi animasi AOS
+      // Initialize AOS
       AOS.init();
 
       // Dummy redirect logic
@@ -172,11 +185,11 @@
         const confirm = document.getElementById("confirm").value;
 
         if (pass !== confirm) {
-          alert("Password tidak cocok, ulangi lagi ya!");
+          alert("Passwords do not match, please try again!");
           return;
         }
 
-        alert("Registrasi berhasil! Silakan login.");
+        alert("Registration successful! Please log in.");
         window.location.href = "login.html";
       });
     </script>

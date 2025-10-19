@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
@@ -40,10 +39,10 @@
                     <a href="login.html"><span class="icon icon-person"></span></a>
                   </li>
                   <li>
-                  <a href="wishlist.html" class="site-wishlist">
-                    <span class="icon icon-heart-o"></span>
-                  </a>
-                </li>
+                    <a href="wishlist.html" class="site-wishlist">
+                      <span class="icon icon-heart-o"></span>
+                    </a>
+                  </li>
                   <li>
                     <a href="cart.html" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
@@ -73,13 +72,13 @@
       </nav>
     </header>
 
-    <!-- Login Section -->
+    <!-- LOGIN SECTION -->
     <div class="site-section">
       <div class="container" data-aos="fade-up" data-aos-duration="800">
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="border p-5 rounded">
-              <h3 class="mb-4 text-center">Login</h2>
+              <h3 class="mb-4 text-center">Login</h3>
               <form id="loginForm">
                 <div class="form-group">
                   <label for="email">Email</label>
@@ -87,7 +86,7 @@
                     type="email"
                     class="form-control"
                     id="email"
-                    placeholder="Masukkan email"
+                    placeholder="Enter your email"
                     required
                   />
                 </div>
@@ -97,20 +96,29 @@
                     type="password"
                     class="form-control"
                     id="password"
-                    placeholder="Masukkan password"
+                    placeholder="Enter your password"
                     required
                   />
                 </div>
                 <div class="form-group text-center mt-4">
-                  <button type="submit" class="btn btn-primary">
-                    Login
-                  </button>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <div class="text-center mt-4">
+                  <p class="text-muted mb-3">Or login with</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-dark btn-sm mx-1">
+                      <i class="icon icon-google"></i> Google
+                    </a>
+                    <a href="#" class="btn btn-outline-primary btn-sm mx-1">
+                      <i class="icon icon-facebook"></i> Facebook
+                    </a>
+                  </div>
                 </div>
                 <div class="text-center mt-3">
-                  <a href="#">Lupa Password?</a>
+                  <a href="#">Forgot Password?</a>
                   <p class="mt-2">
-                    Belum punya akun?
-                    <a href="register.html">Daftar di sini</a>
+                    Don't have an account?
+                    <a href="register.html">Sign up here</a>
                   </p>
                 </div>
               </form>
@@ -169,22 +177,22 @@
     </footer>
   </div>
 
-  <!--SCRIPTS -->
+  <!-- SCRIPTS -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 
-    <!-- Dummy redirect logic -->
-    <script>
-      document.getElementById("loginForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const email = document.getElementById("email").value.trim();
-        if (email.includes("admin")) {
-          window.location.href = "../admin/dashboard.html";
-        } else {
-          window.location.href = "profile.html";
-        }
-      });
-    </script>
+  <!-- Dummy redirect logic -->
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      if (email.includes("admin")) {
+        window.location.href = "../admin/dashboard.html";
+      } else {
+        window.location.href = "profile.html";
+      }
+    });
+  </script>
   </body>
 </html>
