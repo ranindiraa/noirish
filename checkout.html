@@ -117,151 +117,36 @@
           <div class="container my-5">
             <div class="row">
               <div class="col-md-6 mb-5 mb-md-0">
-                <h2 class="h3 mb-3 text-black">Shipping Details</h2>
-                <div class="p-3 p-lg-5 border">
-                  <div class="form-group row">
-                    <div class="col-md-6">
-                      <label for="c_fname" class="text-black"
-                        >First Name <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_fname"
-                        name="c_fname"
-                      />
+                <h2 class="h3 mb-3 text-black">Shipping Address</h2>
+                <div class="p-3 p-lg-5 border rounded">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-3"
+                  >
+                    <div id="current-address">
+                      <h5 class="mb-1 text-black">
+                        Putri Aulia
+                        <span class="text-muted small">(0812-3456-7890)</span>
+                      </h5>
+                      <p class="mb-0">Jalan Simpang Timur No.10 RT 04/05</p>
+                      <p class="mb-0">Kel. Rambutan Kec. Susukan</p>
+                      <p class="mb-0">
+                        CIRACAS, EAST JAKARTA, DKI JAKARTA, ID 13750
+                      </p>
                     </div>
-                    <div class="col-md-6">
-                      <label for="c_lname" class="text-black"
-                        >Last Name <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_lname"
-                        name="c_lname"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
-                    <div class="col-md-12">
-                      <label for="c_address" class="text-black"
-                        >Address <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_address"
-                        name="c_address"
-                        placeholder="Street address"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Apartment, suite, unit etc. (optional)"
-                    />
-                  </div>
-
-                  <div class="form-group row">
-                    <div class="col-md-6">
-                      <label for="c_state_country" class="text-black"
-                        >Province, City
-                        <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_state_country"
-                        name="c_state_country"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="c_postal_zip" class="text-black"
-                        >Postal/Zip Code
-                        <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_postal_zip"
-                        name="c_postal_zip"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group row mb-5">
-                    <div class="col-md-6">
-                      <label for="c_email_address" class="text-black"
-                        >Email Address <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_email_address"
-                        name="c_email_address"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="c_phone" class="text-black"
-                        >Phone Number<span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="c_phone"
-                        name="c_phone"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label
-                      for="c_create_account"
-                      class="text-black"
-                      data-toggle="collapse"
-                      href="#create_an_account"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls="create_an_account"
-                      ><input type="checkbox" value="1" id="c_create_account" />
-                      Create an account?</label
+                    <button
+                      class="btn btn-primary btn-sm"
+                      data-toggle="modal"
+                      data-target="#addressModal"
                     >
-                    <div class="collapse" id="create_an_account">
-                      <div class="form-group">
-                        <label for="c_account_password" class="text-black"
-                          >Password</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="c_account_password"
-                          name="c_account_password"
-                          placeholder="Enter password"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="c_account_password2" class="text-black"
-                          >Confirm Password</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="c_account_password2"
-                          name="c_account_password2"
-                          placeholder="Confirm password"
-                        />
-                      </div>
-                    </div>
+                      Change
+                    </button>
                   </div>
+
+                  <hr />
 
                   <div class="form-group">
                     <label for="c_order_notes" class="text-black"
-                      >Order Notes</label
+                      >Order Notes (Optional)</label
                     >
                     <textarea
                       name="c_order_notes"
@@ -269,11 +154,10 @@
                       cols="30"
                       rows="5"
                       class="form-control"
-                      placeholder="Write your notes here..."
+                      placeholder="Write any notes for delivery here..."
                     ></textarea>
                   </div>
                 </div>
-
                 <h2 class="h3 mb-3 mt-5 text-black">Coupon Code</h2>
                 <div class="p-3 p-lg-5 border">
                   <label for="c_code" class="text-black mb-3"
@@ -301,7 +185,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6 mb-5 mb-md-0">
                 <h2 class="h3 mb-3 text-black">Your Order</h2>
                 <div class="p-3 p-lg-5 border">
                   <table class="table site-block-order-table mb-4">
@@ -581,13 +465,6 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button
-                    type="button"
                     class="btn btn-primary"
                     onclick="window.location='thankyou.html'"
                   >
@@ -836,6 +713,350 @@
           element.classList.add("active");
         }
       }
+      document.querySelectorAll(".select-address").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const card = this.closest(".address-card");
+          const name = card.querySelector("h5").textContent;
+          const phone = card.querySelector("small").textContent;
+          const addressLines = Array.from(card.querySelectorAll("p"))
+            .map((p) => p.textContent)
+            .join(", ");
+
+          const currentAddress = document.getElementById("current-address");
+          currentAddress.innerHTML = `
+            <h5 class="mb-1 text-black">
+              ${name} <span class="text-muted small">${phone}</span>
+            </h5>
+            <p class="mb-0">${addressLines}</p>
+          `;
+
+          $("#addressModal").modal("hide");
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let selectedAddress = null;
+
+        // ✅ Klik address card — ubah tampilan dan set variabel
+        document.querySelectorAll(".address-option").forEach((card) => {
+          card.addEventListener("click", function () {
+            // Hilangkan 'selected' dari semua
+            document
+              .querySelectorAll(".address-option")
+              .forEach((c) => c.classList.remove("selected"));
+            // Tambah ke yang diklik
+            this.classList.add("selected");
+            selectedAddress = this;
+          });
+        });
+
+        // ✅ Klik Confirm — update address utama
+        const confirmBtn = document.getElementById("confirmAddressBtn");
+        if (confirmBtn) {
+          confirmBtn.addEventListener("click", function () {
+            if (!selectedAddress) return;
+
+            const name = selectedAddress.querySelector("h5").textContent.trim();
+            const phone =
+              selectedAddress
+                .querySelector("span.text-muted")
+                ?.textContent.trim() || "";
+            const addressLines = Array.from(
+              selectedAddress.querySelectorAll("p")
+            )
+              .map((p) => p.textContent.trim())
+              .join("<br>");
+
+            const currentAddress = document.getElementById("current-address");
+            if (currentAddress) {
+              currentAddress.innerHTML = `
+                <h5 class="mb-1 text-black">
+                  ${name} <span class="text-muted small">${phone}</span>
+                </h5>
+                <p class="mb-0">${addressLines}</p>
+              `;
+            }
+
+            $("#addressModal").modal("hide");
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const addAddressBtn = document.getElementById("addAddressBtn");
+        const cancelAddAddress = document.getElementById("cancelAddAddress");
+        const listContainer = document.getElementById("addressListContainer");
+        const formContainer = document.getElementById("newAddressForm");
+
+        if (addAddressBtn) {
+          addAddressBtn.addEventListener("click", function () {
+            listContainer.style.display = "none";
+            formContainer.style.display = "block";
+          });
+        }
+
+        if (cancelAddAddress) {
+          cancelAddAddress.addEventListener("click", function () {
+            formContainer.style.display = "none";
+            listContainer.style.display = "block";
+          });
+        }
+      });
+
+      // ============================
+      // Address Modal Toggle + Title Update
+      // ============================
+      document.addEventListener("DOMContentLoaded", function () {
+        const addAddressBtn = document.getElementById("addAddressBtn");
+        const cancelAddAddress = document.getElementById("cancelAddAddress");
+        const listContainer = document.getElementById("addressListContainer");
+        const formContainer = document.getElementById("newAddressForm");
+        const modalTitle = document.getElementById("addressModalLabel");
+
+        if (addAddressBtn) {
+          addAddressBtn.addEventListener("click", function () {
+            listContainer.style.display = "none";
+            formContainer.style.display = "block";
+            modalTitle.textContent = "Add New Address";
+          });
+        }
+
+        if (cancelAddAddress) {
+          cancelAddAddress.addEventListener("click", function () {
+            formContainer.style.display = "none";
+            listContainer.style.display = "block";
+            modalTitle.textContent = "Select Delivery Address";
+          });
+        }
+      });
+      // ============================
+      // Address Modal Buttons Toggle
+      // ============================
+      document.addEventListener("DOMContentLoaded", function () {
+        const addAddressBtn = document.getElementById("addAddressBtn");
+        const cancelAddAddress = document.getElementById("cancelAddAddress");
+        const addressButtons = document.getElementById("addressButtons");
+        const formButtons = document.getElementById("formButtons");
+        const addressListContainer = document.getElementById(
+          "addressListContainer"
+        );
+        const newAddressForm = document.getElementById("newAddressForm");
+        const modalTitle = document.getElementById("addressModalLabel");
+
+        if (addAddressBtn) {
+          addAddressBtn.addEventListener("click", function () {
+            addressListContainer.style.display = "none";
+            newAddressForm.style.display = "block";
+            addressButtons.style.display = "none";
+            formButtons.style.display = "block";
+            modalTitle.textContent = "Add New Address";
+          });
+        }
+
+        if (cancelAddAddress) {
+          cancelAddAddress.addEventListener("click", function () {
+            newAddressForm.style.display = "none";
+            addressListContainer.style.display = "block";
+            addressButtons.style.display = "block";
+            formButtons.style.display = "none";
+            modalTitle.textContent = "Select Delivery Address";
+          });
+        }
+      });
     </script>
+    <!-- Address Selector Modal -->
+    <div
+      class="modal fade"
+      id="addressModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addressModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content border-0 rounded-lg shadow-lg">
+          <div class="modal-header border-0">
+            <h5
+              class="modal-title text-black font-weight-normal"
+              id="addressModalLabel"
+            >
+              Select Delivery Address
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body p-0">
+            <!-- ========== LIST ALAMAT (tampilan default) ========== -->
+            <div id="addressListContainer">
+              <div
+                id="addressScrollArea"
+                style="max-height: 50vh; overflow-y: auto"
+              >
+                <div class="p-3" id="addressList">
+                  <!-- Address cards -->
+                  <div class="border p-3 mb-3 rounded address-option">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <div>
+                        <h5 class="mb-3 text-black d-inline">Putri Aulia</h5>
+                        <span class="text-muted ml-1">(0812-3456-7890)</span>
+                      </div>
+                      <span class="badge badge-primary">Default</span>
+                    </div>
+                    <p class="mb-0">Jalan Simpang Timur No.10 RT 04/05</p>
+                    <p class="mb-0">Kel. Rambutan Kec. Susukan</p>
+                    <p class="mb-2">
+                      CIRACAS, EAST JAKARTA, DKI JAKARTA, ID 13750
+                    </p>
+                    <a href="#" class="text-primary small mr-3">Edit</a>
+                  </div>
+
+                  <div class="border p-3 mb-3 rounded address-option">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <div>
+                        <h5 class="mb-1 text-black d-inline">Jane Smith</h5>
+                        <span class="text-muted ml-1">(0813-9876-5432)</span>
+                      </div>
+                    </div>
+                    <p class="mb-0">Jl. Anggrek No. 9</p>
+                    <p class="mb-0">Bandung, Jawa Barat</p>
+                    <p class="mb-2">40132</p>
+                    <a href="#" class="text-primary small mr-3">Edit</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tombol bawah -->
+              <div class="sticky-buttons text-center border-top p-3">
+                <button
+                  class="btn btn-primary btn-block"
+                  id="confirmAddressBtn"
+                >
+                  Confirm
+                </button>
+                <button
+                  class="btn btn-outline-primary btn-block mb-2"
+                  id="addAddressBtn"
+                >
+                  Add New Address
+                </button>
+              </div>
+            </div>
+
+            <!-- ========== FORM ADD NEW ADDRESS (disembunyikan awalnya) ========== -->
+            <div id="newAddressForm" class="p-3" style="display: none">
+              <form class="p-0 p-lg-2 border">
+                <div class="form-group row">
+                  <div class="col-md-6">
+                    <label for="c_fname" class="text-black"
+                      >First Name <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_fname"
+                      name="c_fname"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="c_lname" class="text-black"
+                      >Last Name <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_lname"
+                      name="c_lname"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-12 form-group">
+                    <label for="c_phone" class="text-black"
+                      >Phone Number<span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_phone"
+                      name="c_phone"
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="c_address" class="text-black"
+                      >Address <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_address"
+                      name="c_address"
+                      placeholder="Street address"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Apartment, suite, unit etc. (optional)"
+                  />
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-6">
+                    <label for="c_state_country" class="text-black"
+                      >Province, City <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_state_country"
+                      name="c_state_country"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="c_postal_zip" class="text-black"
+                      >Postal/Zip Code <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="c_postal_zip"
+                      name="c_postal_zip"
+                    />
+                  </div>
+                </div>
+              </form>
+              <div class="fsticky-buttons text-center border-top p-3">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Save Address
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-block mb-2"
+                  id="cancelAddAddress"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

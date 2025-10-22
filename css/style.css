@@ -1127,3 +1127,238 @@ a {
   color: #25262a;
   font-weight: 500;
 }
+
+.address-option {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.address-option:hover {
+  background-color: #f9f9f9;
+}
+
+.address-option.selected {
+  border: 1px solid #7971ea !important;
+  background-color: #fff !important;
+  color: inherit !important;
+  box-shadow: 0 0 8px rgba(121, 113, 234, 0.25); /* shadow ungu lembut */
+}
+
+.address-option h5 {
+  font-weight: 400;
+  color: #25262a;
+}
+
+.address-option small {
+  color: #6c757d;
+  font-size: 90%;
+}
+
+.address-option .badge-primary {
+  background-color: #7971ea;
+}
+
+.badge-primary {
+  background-color: #7971ea !important; /* warna ungu khas Shoppers */
+  font-weight: 400; /* lebih tipis dari default (700) */
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Modal body layout */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+/* Scrollable area for address list */
+#addressList {
+  max-height: 50vh;
+  overflow-y: auto;
+  margin-bottom: 0;
+  padding-right: 6px;
+  padding-bottom: 15px;
+}
+
+/* Hilangkan scrollbar visual */
+#addressList::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+#addressList {
+  scrollbar-width: none;
+}
+
+/* Tombol bawah tetap fixed & rapi */
+.bottom-buttons {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 15px 20px 25px;
+  z-index: 10;
+}
+
+.bottom-buttons .btn {
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 400;
+  width: 100%;
+}
+
+.bottom-buttons .btn + .btn {
+  margin-top: 10px;
+}
+/* --- Scroll area dalam modal --- */
+.address-scroll {
+  overflow-y: auto;
+  flex-grow: 1;
+  max-height: calc(80vh - 120px);
+}
+
+.address-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.address-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+/* --- Footer button tetap di bawah --- */
+.modal-footer-buttons {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+  z-index: 10;
+}
+
+.modal-footer-buttons .btn {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+}
+
+.modal-footer-buttons .btn-primary {
+  background-color: #7971ea;
+  border-color: #7971ea;
+}
+.modal-footer-buttons .btn-primary:hover {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+.modal-footer-buttons .btn-outline-primary {
+  border-color: #7971ea;
+  color: #7971ea;
+}
+.modal-footer-buttons .btn-outline-primary:hover {
+  background-color: #7971ea;
+  color: #fff;
+}
+/* ==========================================================
+   UNIFIED CARD STYLE (Address, Shipping, Payment)
+   ========================================================== */
+.address-option,
+.shipping-options .option-card,
+.payment-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect (lembut, sama semua) */
+.address-option:hover,
+.shipping-options .option-card:hover,
+.payment-card:hover {
+  box-shadow: 0 4px 12px rgba(121, 113, 234, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Active state (ungu halus seragam) */
+.address-option.selected,
+.shipping-options .option-card.active,
+.payment-card.active {
+  border-color: #7971ea !important;
+  box-shadow: 0 0 8px rgba(121, 113, 234, 0.25);
+  background-color: #fff !important;
+}
+
+/* Typography seragam */
+.address-option h5,
+.shipping-options span,
+.payment-card h3 {
+  font-weight: 500;
+  color: #25262a;
+}
+
+/* ==========================================================
+   COUPON SECTION BELOW SHIPPING ADDRESS
+   ========================================================== */
+.coupon-section {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px; /* jarak dari Shipping Address */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.coupon-section h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #25262a;
+  margin-bottom: 12px;
+}
+
+.coupon-section .input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.coupon-section input {
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #25262a;
+}
+
+.coupon-section input:focus {
+  border-color: #7971ea;
+  box-shadow: 0 0 0 0.1rem rgba(121, 113, 234, 0.25);
+}
+
+.coupon-section button {
+  border-radius: 6px;
+  background-color: #7971ea;
+  border-color: #7971ea;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.coupon-section button:hover {
+  background-color: #6c63ff;
+}
