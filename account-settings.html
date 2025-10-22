@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NOIRISH | Account Settings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        background-color: #7971ea; /* Warna ungu primer dari tema */
+        color: #fff;
+        border-radius: 5px;
+      }
+      .nav-pills .nav-link {
+        color: #000;
+        border-radius: 5px;
+      }
+      .nav-pills .nav-link:hover {
+        background-color: #f8f9fa;
+      }
+    </style>
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+    <header class="site-navbar" role="banner">
+      <div class="site-navbar-top">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+              <form action="" class="site-block-top-search">
+                <span class="icon icon-search2"></span>
+                <input type="text" class="form-control border-0" placeholder="Search">
+              </form>
+            </div>
+
+            <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+              <div class="site-logo">
+                <a href="index.html" class="js-logo-clone">NOIRISH</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+              <div class="site-top-icons">
+                <ul>
+                  <li><a href="login.html"><span class="icon icon-person"></span></a></li>
+                  <li><a href="wishlist.html"><span class="icon icon-heart-o"></span></a></li>
+                  <li>
+                    <a href="cart.html" class="site-cart">
+                      <span class="icon icon-shopping_cart"></span>
+                      <span class="count">2</span>
+                    </a>
+                  </li> 
+                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                </ul>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div> 
+      <nav class="site-navigation text-right text-md-center" role="navigation">
+        <div class="container">
+          <ul class="site-menu js-clone-nav d-none d-md-block">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">My Account</strong></div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="h3 mb-3 text-black">My Account</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="p-3 p-lg-5 border">
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">My Profile</a>
+                    
+                    <a class="nav-link" id="v-pills-history-tab" data-toggle="pill" href="#v-pills-history" role="tab" aria-controls="v-pills-history" aria-selected="false">Order History</a>
+                    
+                    <a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab" aria-controls="v-pills-address" aria-selected="false">Shipping Address</a>
+                    <a class="nav-link" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Change Password</a>
+                    <a class="nav-link" href="login.html">Logout</a>
+                  </div>
+                </div>
+
+                <div class="col-md-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    
+                    <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                      <h4 class="mb-3">Profile Information</h4>
+                      <form action="#" method="post">
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_fname" name="c_fname" value="Jane">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_lname" name="c_lname" value="Doe">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="c_email" name="c_email" value="jane.doe@example.com" readonly>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-lg py-3 btn-block">Save Changes</button>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                      <h4 class="mb-3">My Order History</h4>
+                      <p>Here is a summary of your recent orders.</p>
+                      
+                      <div class="site-blocks-table">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Date</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1024</td>
+                                    <td>Oct 12, 2025</td>
+                                    <td>$150.00</td>
+                                    <td><span class="badge badge-success">Completed</span></td>
+                                    <td><a href="#" class="btn btn-primary btn-sm">View Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>#1022</td>
+                                    <td>Oct 11, 2025</td>
+                                    <td>$250.00</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td><a href="#" class="btn btn-primary btn-sm">View Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>#1021</td>
+                                    <td>Oct 10, 2025</td>
+                                    <td>$99.90</td>
+                                    <td><span class="badge badge-danger">Cancelled</span></td>
+                                    <td><a href="#" class="btn btn-primary btn-sm">View Details</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
+                        <h4 class="mb-3">Shipping Address</h4>
+                        <form action="#" method="post">
+                          <div class="form-group">
+                            <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street address" value="123 Fashion Street">
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-md-6">
+                              <label for="c_state_country" class="text-black">Province <span class="text-danger">*</span></label>
+                              <input type="text" class="form-control" id="c_state_country" name="c_state_country" value="DKI Jakarta">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="c_postal_zip" class="text-black">Posta / Zip <span class="text-danger">*</span></label>
+                              <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip" value="12345">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-lg py-3 btn-block">Save Address</button>
+                            </div>
+                         </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+                      <h4 class="mb-3">Change Password</h4>
+                      <form action="#" method="post">
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <label for="c_curr_password" class="text-black">Current Password</label>
+                            <input type="password" class="form-control" id="c_curr_password" name="c_curr_password">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-md-6">
+                            <label for="c_new_password" class="text-black">New Password</label>
+                            <input type="password" class="form-control" id="c_new_password" name="c_new_password">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="c_re_password" class="text-black">Re-type New Password</label>
+                            <input type="password" class="form-control" id="c_re_password" name="c_re_password">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-lg py-3 btn-block">Update Password</button>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h3 class="footer-heading mb-4">NOIRISH</h3>
+            <div class="block-6">
+              <h3 class="font-weight-light mb-0">Style Your Life, Express Yourself</h3>
+              <p>Premium streetwear for the modern generation. Quality clothing that speaks your style.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h3 class="footer-heading mb-4">Quick Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">123 Fashion Street, Downtown District, Jakarta 12345</li>
+                <li class="phone"><a href="tel:+6281234567890">+62 812-3456-7890</a></li>
+                <li class="email">contact@noirish.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              NOIRISH. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
