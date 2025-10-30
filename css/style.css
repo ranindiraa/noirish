@@ -844,53 +844,6 @@ a {
                         border: 2px solid #6c63ff;
                         background-color: #f0edff;
                       }
-/* Gaya dasar Payment Card — seragam dengan Shipping */
-.payment-card {
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 8px; /* ⬅️ bikin sudut lebih lembut */
-  padding: 16px 20px;
-  margin-bottom: 12px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* ⬅️ shadow lembut */
-  cursor: pointer;
-}
-
-                      
-.payment-card h3 a,
-.payment-method h3 a {
-  color: #7971ea !important; 
-  text-decoration: none !important; 
-  font-weight: 500;
-  outline: none !important;
-}
-
-.payment-card h3 a:hover,
-.payment-card h3 a:focus,
-.payment-card h3 a:active,
-.payment-method h3 a:hover,
-.payment-method h3 a:focus,
-.payment-method h3 a:active {
-  color: #6c63ff !important; 
-  text-decoration: none !important;
-  outline: none !important; 
-}
-
-.payment-card.active {
-  border-color: #7971ea !important;
-  background-color: #fff !important;
-  color: inherit !important;
-  box-shadow: 0 0 8px rgba(121, 113, 234, 0.25); /* shadow ungu lebih lembut */
-}
-
-.payment-card.active {
-  border-color: #7971ea !important;
-  background-color: #fff !important;
-  color: inherit !important;
-  box-shadow: 0 0 6px rgba(121, 113, 234, 0.3);
-}
-
-
 
 .qty-input::-webkit-outer-spin-button,
 .qty-input::-webkit-inner-spin-button {
@@ -926,14 +879,6 @@ a {
       h5 {
         color: #25262a;
         font-weight: 500;
-      }
-
-      /* Section titles seperti di checkout */
-      .section-title {
-        font-size: 24px;
-        color: #25262a;
-        font-weight: 600;
-        margin-bottom: 15px;
       }
 
       .delivery-card {
@@ -1086,10 +1031,7 @@ a {
       .font-weight-bold {
         font-weight: 600 !important;
       }
-  
-      /* =====================================
-   SHIPPING OPTION STYLE (match Payment Card look)
-   ===================================== */
+      
 .shipping-options .option-card {
   background: #fff;
   border: 1px solid #e6e6e6;
@@ -1101,25 +1043,11 @@ a {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-
-
 /* Active (selected) state — like payment card */
 .shipping-options .option-card.active {
   border: 1px solid #7971ea !important;
   box-shadow: 0 0 8px rgba(121, 113, 234, 0.25);
   background-color: #fff !important;
-}
-
-/* Text style */
-.shipping-options .option-card span {
-  color: #25262a;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.shipping-options .option-card small {
-  color: #8c92a0;
-  font-size: 14px;
 }
 
 .shipping-options .option-card .price {
@@ -1128,45 +1056,9 @@ a {
   font-weight: 500;
 }
 
-.address-option {
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.address-option:hover {
-  background-color: #f9f9f9;
-}
-
-.address-option.selected {
-  border: 1px solid #7971ea !important;
-  background-color: #fff !important;
-  color: inherit !important;
-  box-shadow: 0 0 8px rgba(121, 113, 234, 0.25); /* shadow ungu lembut */
-}
-
-.address-option h5 {
-  font-weight: 400;
-  color: #25262a;
-}
-
-.address-option small {
-  color: #6c757d;
-  font-size: 90%;
-}
-
-.address-option .badge-primary {
-  background-color: #7971ea;
-}
-
 .badge-primary {
   background-color: #7971ea !important; /* warna ungu khas Shoppers */
-  font-weight: 400; /* lebih tipis dari default (700) */
+  font-weight: 400; 
   font-size: 0.75rem;
   padding: 4px 8px;
   border-radius: 4px;
@@ -1220,58 +1112,7 @@ a {
 .bottom-buttons .btn + .btn {
   margin-top: 10px;
 }
-/* --- Scroll area dalam modal --- */
-.address-scroll {
-  overflow-y: auto;
-  flex-grow: 1;
-  max-height: calc(80vh - 120px);
-}
 
-.address-scroll::-webkit-scrollbar {
-  width: 6px;
-}
-.address-scroll::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-/* --- Footer button tetap di bawah --- */
-.modal-footer-buttons {
-  position: sticky;
-  bottom: 0;
-  background: #fff;
-  border-top: 1px solid #eee;
-  z-index: 10;
-}
-
-.modal-footer-buttons .btn {
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 10px 0;
-  transition: all 0.2s ease;
-}
-
-.modal-footer-buttons .btn-primary {
-  background-color: #7971ea;
-  border-color: #7971ea;
-}
-.modal-footer-buttons .btn-primary:hover {
-  background-color: #6c63ff;
-  border-color: #6c63ff;
-}
-.modal-footer-buttons .btn-outline-primary {
-  border-color: #7971ea;
-  color: #7971ea;
-}
-.modal-footer-buttons .btn-outline-primary:hover {
-  background-color: #7971ea;
-  color: #fff;
-}
-/* ==========================================================
-   UNIFIED CARD STYLE (Address, Shipping, Payment)
-   ========================================================== */
 .address-option,
 .shipping-options .option-card,
 .payment-card {
@@ -1308,57 +1149,232 @@ a {
   font-weight: 500;
   color: #25262a;
 }
-
-/* ==========================================================
-   COUPON SECTION BELOW SHIPPING ADDRESS
-   ========================================================== */
-.coupon-section {
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 8px;
-  padding: 20px;
-  margin-top: 20px; /* jarak dari Shipping Address */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.coupon-section h6 {
-  font-weight: 600;
-  font-size: 16px;
-  color: #25262a;
-  margin-bottom: 12px;
-}
-
-.coupon-section .input-group {
-  display: flex;
-  gap: 10px;
-}
-
-.coupon-section input {
-  border-radius: 6px;
-  border: 1px solid #e6e6e6;
-  flex: 1;
-  padding: 10px 12px;
-  font-size: 14px;
-  color: #25262a;
-}
-
-.coupon-section input:focus {
-  border-color: #7971ea;
-  box-shadow: 0 0 0 0.1rem rgba(121, 113, 234, 0.25);
-}
-
-.coupon-section button {
-  border-radius: 6px;
-  background-color: #7971ea;
-  border-color: #7971ea;
-  color: #fff;
-  font-size: 14px;
+ 
+.payment-card h3 a {  
+  color: #7971ea !important; 
+  text-decoration: none !important; 
   font-weight: 500;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  transition: background-color 0.2s ease;
+  outline: none !important;
 }
 
-.coupon-section button:hover {
-  background-color: #6c63ff;
+.payment-card h3 a:hover,
+.payment-card h3 a:focus,
+.payment-card h3 a:active,
+.payment-method h3 a:hover,
+.payment-method h3 a:focus,
+.payment-method h3 a:active {
+  color: #6c63ff !important; 
+  text-decoration: none !important;
+  outline: none !important; 
 }
+
+/* css cart */
+
+    .cart-container {
+      background: #fff;
+      margin-bottom: 3rem;
+      border: 1px solid #edf0f5;
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .cart-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .select-all {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* purple solid checkbox like Tokopedia */
+    .check-spot {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #eee;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      border: 2px solid transparent;
+    }
+    input.cart-checkbox {
+      display: none;
+    } /* hide native */
+
+    /* when checked — purple solid */
+    .check-spot.checked {
+      background: #7971ea;
+      border-color: #7971ea;
+    }
+    .check-spot svg {
+      width: 12px;
+      height: 12px;
+      display: none;
+      fill: #fff;
+    }
+    .check-spot.checked svg {
+      display: block;
+    }
+
+    /* cart item row */
+    .cart-item {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #f1f1f3;
+      margin-bottom: 12px;
+      transition: box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .cart-item.selected {
+      box-shadow: 0 6px 18px rgba(121, 113, 234, 0.08);
+      border-color: rgba(121, 113, 234, 0.12);
+    }
+
+    .cart-thumb {
+      width: 96px;
+      height: 96px;
+      flex: 0 0 96px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #f4f1ff; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cart-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cart-meta {
+      flex: 1;
+      min-width: 0;
+    }
+    .cart-meta h5 {
+      margin: 0 0 6px 0;
+      font-size: 16px;
+      color: #25262a;
+      font-weight: 500;
+    }
+    .cart-meta .meta-sub {
+      color: #8c92a0;
+      font-size: 13px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .cart-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .variant-select {
+      padding: 6px 10px;
+      border: 1px solid #b4aaff; 
+      border-radius: 6px;
+      background-color: #fff;
+      color: #444;
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      appearance: none; 
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%236C63FF' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 10px;
+      padding-right: 28px;
+    }
+
+    .variant-select:hover {
+      border-color: #7971ea;
+      background-color: #faf8ff;
+    }
+
+    .variant-select option {
+      color: #444;
+    }
+
+    .cart-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .cart-actions .icon-btn {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      color: #8c92a0;
+    }
+    .cart-actions .icon-btn.liked {
+      color: #e74c3c;
+    } 
+    .icon-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .icon-btn:focus,
+    .icon-btn:active {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .remove-btn {
+      color: #8c92a0;
+      transition: color 0.2s ease;
+    }
+
+    .remove-btn:active {
+      color: #b4aaff; 
+    }
+
+    .cart-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .cart-summary {
+      display: flex;
+
+      gap: 14px;
+      align-items: center;
+    }
+
+    .total-box {
+      background: #f8f9fa;
+      border-color: #7971ea;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-weight: 500;
+      color: #25262a;
+    }
+
+    /* responsive */
+    @media (max-width: 576px) {
+      .cart-item {
+        flex-direction: row;
+      }
+      .cart-controls {
+        align-items: flex-end;
+      }
+    }
